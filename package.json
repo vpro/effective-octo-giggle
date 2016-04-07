@@ -1,0 +1,30 @@
+{
+  "name": "hackathon",
+  "version": "0.1.0-SNAPSHOT",
+  "publishConfig": {
+    "registry": "https://nexus.vpro.nl/content/repositories/npm-vpro/"
+  },
+  "scripts": {
+    "dev": "parallelshell 'npm run serve -s' 'npm run watch:js -s' 'npm run livereload'",
+    "lint": "jscs src --esnext --config=./node_modules/vpro-dev/.jscsrc",
+    "livereload": "live-reload src/ test/ --port 9091",
+    "serve": "http-server -p 9090",
+    "watch:js": "watch 'npm run lint' ./src"
+  },
+  "devDependencies": {
+    "http-server": "^0.8.5",
+    "live-reload": "^1.1.0",
+    "parallelshell": "^2.0.0",
+    "watch": "^0.16.0"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "jquery-inview": "github:protonet/jquery.inview",
+    "stapes": "^0.8.1",
+    "systemjs": "^0.19.5",
+    "traceur": "0.0.92",
+    "vpro-dev": "^0.5.1",
+    "vpro-bootstrap": "0.5.0",
+    "vpro-mediaplayer": "0.6.0"
+  }
+}

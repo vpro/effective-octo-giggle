@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link rel="stylesheet" href="../../node_modules/vpro-bootstrap/dist/style.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="http://localhost:9091"></script>
+
+        <script src="../../node_modules/systemjs/dist/system.js"></script>
+        <script src="../../systemjs.config.js"></script>
+
+        <script>
+
+            var appConfig = {
+                rootNode: '.app',
+                playerNode: '.player',
+                buttonNextNode: '.button-next',
+                buttonRejectNode: '.button-reject'
+            };
+
+            System.import( 'src/App.js' ).then( function ( App ) {
+                var app = new App.default( appConfig );
+            });
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <div class="app">
+
+            <div class="player"></div>
+
+            <div class="button button-reject">REJECT!</div>
+            <div class="button button-next">NEXT!</div>
+
+        </div>
+
+    </body>
+
+</html>
