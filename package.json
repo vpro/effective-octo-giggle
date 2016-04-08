@@ -25,6 +25,7 @@
     "traceur": "0.0.92",
     "vpro-dev": "^0.5.1",
     "vpro-bootstrap": "0.5.0",
-    "vpro-mediaplayer": "0.6.0"
+    "vpro-mediaplayer": "0.6.0",
+    "shake.js": "1.2.2"
   }
 }

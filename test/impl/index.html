@@ -11,13 +11,17 @@
         <script src="../../node_modules/systemjs/dist/system.js"></script>
         <script src="../../systemjs.config.js"></script>
 
+        <script src="../../node_modules/shake.js/shake.js"></script>
+
         <script>
 
             var appConfig = {
                 rootNode: '.app',
                 playerNode: '.player',
+                buttonStartNode: '.button-start',
                 buttonNextNode: '.button-next',
-                buttonRejectNode: '.button-reject'
+                buttonRejectNode: '.button-reject',
+                infoNode: '.info'
             };
 
             System.import( 'src/App.js' ).then( function ( App ) {
@@ -30,12 +34,25 @@
 
     <body>
 
-        <div class="app">
+        <div class="app loading">
 
             <div class="player"></div>
 
-            <div class="button button-reject">REJECT!</div>
-            <div class="button button-next">NEXT!</div>
+            <footer>
+
+                <div class="loader">
+                    Loading...
+                </div>
+
+                <div class="controls">
+                    <input class="query" type="text" placeholder="search"><!--
+                    --><div class="button button-start">GO.</div><!--
+                    --><div class="button button-reject">REJECT.</div><!--
+                    --><div class="button button-next">NEXT!</div><!--
+                    --><div class="info"></div>
+                </div>
+
+            </footer>
 
         </div>
 

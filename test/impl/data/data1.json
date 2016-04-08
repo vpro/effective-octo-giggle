@@ -1,0 +1,33 @@
+{
+    "tracks": [
+        {
+            "title": "King Crimson - Elephant Talk",
+            "url": "https://youtu.be/GTQrlDzqUCA?t=31s",
+            "intro": "aank01.mp3"
+        },
+
+        {
+            "title": "Interview: Adrian Belew",
+            "url": "POMS_VPRO_518245",
+            "intro": "aank02.mp3"
+        },
+
+        {
+            "title": "David Bowie - Stay",
+            "url": "https://youtu.be/7tWyIug2qP0?t=15s",
+            "intro": "aank03.mp3"
+        },
+
+        {
+            "title": "David Bowie interviewed by Karel van de Graaf",
+            "url": "https://youtu.be/yTyuhTb0w1Q?t=3m10s",
+            "intro": "aank04.mp3"
+        },
+
+        {
+            "title": "Little Richard - Long Tall Sally",
+            "url": "https://youtu.be/jqxNSvFMkag",
+            "intro": "aank05.mp3"
+        }
+    ]
+}

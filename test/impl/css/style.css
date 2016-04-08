@@ -1,3 +1,113 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.app {
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+.controls {
+    opacity: 1;
+    position: absolute;
+
+    -webkit-transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -o-transition: opacity .25s ease-in-out;
+    transition: opacity .25s ease-in-out;
+}
+
+.app.loading .controls {
+    opacity: 0;
+}
+
+.loader {
+    opacity: 0;
+
+    position: absolute;
+    color: #fff;
+    line-height: 40px;
+    font-size: 14px;
+    padding: 0 0 0 12px;
+
+    -webkit-transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -o-transition: opacity .25s ease-in-out;
+    transition: opacity .25s ease-in-out;
+}
+
+.app.loading .loader {
+    opacity: 1;
+}
+
+footer {
+    height: 40px;
+    width: 100%;
+}
+
 .button {
+    display: inline-block;
     cursor: pointer;
+
+    width: 100px;
+    height: 40px;
+
+    line-height: 40px;
+    font-size: 14px;
+
+    text-align: center;
+
+    background: darkorange;
+}
+
+.button-next {
+    display: none;
+}
+
+.button-start {
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+.query {
+    display: inline-block;
+    border: none;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    padding: 0 0 0 12px;
+
+}
+
+.info {
+    display: inline-block;
+    width: calc(100vw - 540px);
+    margin: 0 0 0 20px;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 40px;
+    line-height: 40px;
+    float: right;
+}
+
+.app .player {
+    width: 100%;
+    height: calc(100vh - 40px);
+    border-bottom: 1px solid #000;
+
+    background-image: url( '../img/extradiologodef.jpg' );
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fff;
+}
+
+.app .player.audio.allow-nocanvas {
+    height: calc(100vh - 40px);
 }

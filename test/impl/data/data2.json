@@ -1,0 +1,30 @@
+{
+    "tracks": [
+        {
+            "title": "De Staat - Witch Doctor",
+            "url": "https://youtu.be/0ttGgIQpAUc",
+            "intro": "aankb01.mp3"
+        },
+
+        {
+            "title": "Torre Florim in Nooit Meer Slapen",
+            "url": "RBX_VPRO_3310839",
+            "intro": "aankb02.mp3"
+        },
+        {
+            "title": "Beastie Boys - Intergalactic",
+            "url": "https://youtu.be/LBxfGG0OVgU",
+            "intro": "aankb03.mp3"
+        },
+        {
+            "title": "Interview: Adam Yauch",
+            "url": "https://youtu.be/rKuVf-IDKWM?t=1m25s",
+            "intro": "aankb04.mp3"
+        },
+        {
+            "title": "David Bowie & Adam Yauch - Space Oddity (Tibet House Benefit)",
+            "url": "https://youtu.be/SUDcxBIckSA",
+            "intro": "aankb05.mp3"
+        }
+    ]
+}
