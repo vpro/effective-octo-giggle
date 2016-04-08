@@ -38,6 +38,11 @@ var App = Stapes.subclass({
 
     createIntroPlayer: function () {
         this.introPlayer = document.createElement( 'audio' );
+
+        this.introPlayer.setAttribute( 'src', '../impl/data/stationcall.mp3' );
+
+        this.introPlayer.play();
+
     },
 
     bindHandlers: function () {
@@ -221,7 +226,7 @@ var App = Stapes.subclass({
             profile: 'vpro',
             playerConfig: {
                 autoplay: true,
-                controls: false
+                controls: true
             }
         });
 
